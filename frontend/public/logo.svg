@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="100%" height="100%">
+  <defs>
+    <!-- Primary Gradient for Bus Icon -->
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8E2DE2" />
+      <stop offset="100%" stop-color="#4A00E0" />
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#4A00E0" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="100%" height="100%" fill="#FFFFFF" rx="16" />
+
+  <g transform="translate(40, 25)">
+    <!-- BUS ICON BADGE -->
+    <g filter="url(#dropShadow)">
+      <!-- Main Bus Body -->
+      <path d="M 20 50 
+               C 20 25, 35 20, 75 20 
+               C 115 20, 130 25, 130 50 
+               L 130 110 
+               C 130 120, 120 125, 110 125 
+               L 40 125 
+               C 30 125, 20 120, 20 110 
+               Z" 
+            fill="url(#purpleGrad)" />
+
+      <!-- Roof/Cap Curve Accent -->
+      <path d="M 25 45 C 25 30, 40 23, 75 23 C 110 23, 125 30, 125 45 Z" fill="#A450FE" opacity="0.4" />
+
+      <!-- Windshield -->
+      <path d="M 32 38 
+               C 32 33, 40 30, 75 30 
+               C 110 30, 118 33, 118 38 
+               L 118 68 
+               C 118 72, 112 74, 105 74 
+               L 45 74 
+               C 38 74, 32 72, 32 68 
+               Z" 
+            fill="#FFFFFF" />
+
+      <!-- Center Windshield Divider Line (Stylized Driver/Passenger Split) -->
+      <line x1="75" y1="30" x2="75" y2="74" stroke="#4A00E0" stroke-width="2" opacity="0.15" />
+
+      <!-- Headlights -->
+      <circle cx="38" cy="88" r="7" fill="#FFEA00" />
+      <circle cx="112" cy="88" r="7" fill="#FFEA00" />
+
+      <!-- Grille Lines -->
+      <line x1="56" y1="86" x2="94" y2="86" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.8" />
+      <line x1="60" y1="92" x2="90" y2="92" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.8" />
+
+      <!-- Bumper -->
+      <rect x="30" y="104" width="90" height="10" rx="5" fill="#310099" opacity="0.3" />
+
+      <!-- Wheels -->
+      <rect x="28" y="123" width="20" height="10" rx="3" fill="#222222" />
+      <rect x="102" y="123" width="20" height="10" rx="3" fill="#222222" />
+    </g>
+
+    <!-- LOGO TEXT: "getbus" -->
+    <g transform="translate(155, 98)">
+      <!-- "get" in bold dark purple -->
+      <text x="0" y="0" 
+            font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
+            font-size="68" 
+            font-weight="800" 
+            letter-spacing="-1.5" 
+            fill="#2D0C57">get</text>
+      
+      <!-- "bus" in primary vibrant purple -->
+      <text x="102" y="0" 
+            font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
+            font-size="68" 
+            font-weight="900" 
+            letter-spacing="-1.5" 
+            fill="url(#purpleGrad)">bus</text>
+
+      <!-- Tagline / Accent Dot -->
+      <circle cx="218" cy="-8" r="6" fill="#8E2DE2" />
+      <text x="2" y="24" 
+            font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
+            font-size="13" 
+            font-weight="600" 
+            letter-spacing="4" 
+            fill="#8A8A9E" 
+            text-transform="uppercase">BOOK BUS TICKETS</text>
+    </g>
+  </g>
+</svg>
